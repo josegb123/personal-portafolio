@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio | Jose Gabriel Oyola Solano</title>
 
     <!-- Bootstrap 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Estilos Personalizados -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Google Fonts (Opcional, para un diseño más moderno) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,7 @@
     <!-- Bootstrap Icons (Opcional, para iconos) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
 
     <!-- =================================================
@@ -27,8 +30,9 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#inicio">Jose Gabriel Oyola Solano</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Jose Gabriel Oyola Solano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -64,8 +68,10 @@
         <section id="inicio" class="d-flex align-items-center text-center">
             <div class="container fade-in">
                 <h1 class="display-3">Jose Gabriel Oyola Solano</h1>
-                <p class="lead">Desarrollador de Software | Apasionado por la tecnología y la creación de soluciones eficientes.</p>
-                <a href="#proyectos" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
+                <p class="lead">Desarrollador de Software | Apasionado por la tecnología y la creación de soluciones
+                    eficientes.</p>
+                <a href="#acerca-de-mi" class="btn btn-primary btn-lg rounded-pill m-2">Acerca de Mí</a>
+                <a href="#proyectos" class="btn btn-primary btn-lg rounded-pill m-2">Ver mis proyectos</a>
             </div>
         </section>
 
@@ -76,32 +82,119 @@
             <div class="container">
                 <h2 class="text-center mb-5">Acerca de Mí</h2>
                 <div class="row">
-                    <div class="col-lg-4 text-center">                        
-                        <img src="assets/images/foto.webp" class="img-fluid rounded mb-4" alt="Foto de Jose Gabriel Oyola Solano">
+                    <div class="col-lg-4 text-center">
+                        <img src="assets/images/foto.webp" class="img-fluid rounded mb-4"
+                            alt="Foto de Jose Gabriel Oyola Solano">
                     </div>
                     <div class="col-lg-8">
                         <h3>Mi Historia</h3>
-                        <p>Soy un desarrollador con experiencia en la creación de aplicaciones web y móviles. Me enfoco en escribir código limpio, eficiente y escalable. Mi objetivo es transformar ideas en productos funcionales que aporten valor a los usuarios.</p>
-                        
+                        <p>Estudiante de tecnología y desarrollador con una sólida base en gestión de sistemas y soporte
+                            técnico. Actualmente en formación como Tecnólogo en Análisis y Desarrollo de Software, me
+                            especializo en la creación de soluciones eficientes y escalables.</p>
+                        <p>Mi enfoque se centra en la aplicación práctica de habilidades técnicas para transformar
+                            requisitos en productos funcionales. Poseo experiencia en maquetación web, configuración de
+                            equipos y un compromiso constante con el aprendizaje de nuevas tecnologías y metodologías de
+                            desarrollo.</p>
                         <h4 class="mt-4">Habilidades</h4>
-                        <!-- Ejemplo de habilidades, puedes personalizarlas -->
-                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-html me-1"></i> HTML5</span>
-                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-css me-1"></i> CSS3 & Bootstrap</span>
-                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-js me-1"></i> JavaScript (ES6+)</span>
-                        <span class="badge fs-6 bg-success me-2 mb-2"><i class="bi bi-filetype-java me-1"></i> Spring Boot</span>
-                        <span class="badge fs-6 bg-secondary me-2 mb-2"><i class="bi bi-android2 me-1"></i> Android (Java/Kotlin)</span>
-                        <span class="badge fs-6 bg-secondary me-2 mb-2"><i class="bi bi-database me-1"></i> Bases de Datos (SQL)</span>
-                        <span class="badge fs-6 bg-info text-dark me-2 mb-2"><i class="bi bi-linux me-1"></i> Linux</span>
-                        <span class="badge fs-6 bg-info text-dark me-2 mb-2"><i class="bi bi-translate me-1"></i> Inglés B2</span>
-                        
-                        <h4 class="mt-4">Educación y Documentos</h4>
-                        <p>Aquí puedes detallar tu formación académica. Además, puedes descargar mi CV para más detalles.</p>
-                        <!-- Asegúrate de tener un archivo CV.pdf en la carpeta assets/docs/ -->
-                        <a href="assets/docs/CV.pdf" class="btn btn-outline-primary" target="_blank">Descargar CV</a>
+                        <div class="container">
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-html">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                    <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                    <path fill="#FFF"
+                                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                                    </path>
+                                    <path fill="#EEE"
+                                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                                    </path>
+                                </svg>
+                                HTML5
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-css">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                    <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                    <path fill="#FFF"
+                                        d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z">
+                                    </path>
+                                    <path fill="#EEE"
+                                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z">
+                                    </path>
+                                </svg> CSS3 & Bootstrap
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-js">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                                    <path fill="#000001"
+                                        d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z">
+                                    </path>
+                                </svg>
+                                JavaScript (ES6+)
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-spring">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#8bc34a"
+                                        d="M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M39.385 32.558c-3.123 4.302-8.651 4.533-13.854 4.442H18.75h-1.938c4.428-1.593 7.063-1.972 9.754-3.4 5.068-2.665 10.078-8.496 11.121-14.562-1.93 5.836-7.779 10.85-13.109 12.889-3.652 1.393-10.248 2.745-10.248 2.745l-.267-.145C9.573 32.268 9.437 22.214 17.6 18.968c3.574-1.423 6.993-.641 10.854-1.593 4.122-1.012 8.89-4.208 10.83-8.375C41.456 15.667 44.07 26.106 39.385 32.558L39.385 32.558zM15.668 38.445C15.386 38.795 14.955 39 14.505 39c-.823 0-1.495-.677-1.495-1.5s.677-1.5 1.495-1.5c.341 0 .677.118.941.336C16.086 36.855 16.186 37.805 15.668 38.445L15.668 38.445z">
+                                    </path>
+                                </svg>
+                                Spring Boot
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-android">
+                                <img width="48" height="48" src="https://img.icons8.com/fluency/48/android-os.png"
+                                    alt="android-os" /> Android
+                                (Java/Kotlin)
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-sql">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                    viewBox="0 0 48 48">
+                                    <path fill="#006064"
+                                        d="M47.776,8.156c-0.13-0.107-0.296-0.163-0.465-0.156c-0.463,0-1.062,0.314-1.385,0.483l-0.128,0.065 c-0.541,0.262-1.13,0.41-1.73,0.435c-0.615,0.02-1.146,0.056-1.836,0.128c-4.091,0.421-5.916,3.556-7.674,6.589 c-0.957,1.65-1.946,3.363-3.301,4.672c-0.28,0.272-0.578,0.525-0.892,0.758c-1.402,1.042-3.163,1.787-4.533,2.314 c-1.319,0.504-2.759,0.957-4.15,1.396c-1.275,0.401-2.478,0.781-3.584,1.191c-0.499,0.185-0.923,0.327-1.298,0.452 c-1.008,0.327-1.735,0.578-2.797,1.309c-0.414,0.283-0.83,0.589-1.111,0.818c-0.843,0.673-1.589,1.459-2.217,2.335 c-0.54,0.809-1.164,1.558-1.862,2.235c-0.224,0.219-0.622,0.327-1.218,0.327C6.899,33.509,4.984,33,3.699,33 C1.987,33,0.208,33.627,0,34c0,0,2.911,1.894,3.014,1.996c-0.111,0.164-1.818,2.503-2.002,3.011 c2.494,0.063,3.956-0.306,5.356-0.983c0.406-0.196,0.818-0.398,1.309-0.605c0.818-0.355,1.699-0.921,2.633-1.52 c1.222-0.797,2.501-1.615,3.741-2.01c1.019-0.311,2.081-0.46,3.147-0.442c1.309,0,2.687,0.175,4.016,0.345 c0.99,0.128,2.78,0.148,3.786,0.208c0.269,0.016,1.84,0.034,2.946,0.027C26.758,36.642,25,39,25,39s6,0,8.548-5.781 c0.034-0.067,0.063-0.136,0.096-0.203c1.58-0.377,5.63-2.513,6.706-8.405c0.504-1.712,0.874-3.412,1.2-4.909 c0.389-1.8,0.725-3.343,1.109-3.942c0.604-0.939,1.525-1.574,2.417-2.191c0.121-0.083,0.244-0.164,0.363-0.252 c1.121-0.787,2.235-1.695,2.481-3.389V9.889C48.098,8.626,47.948,8.303,47.776,8.156z">
+                                    </path>
+                                </svg> Bases de Datos (SQL)
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-linux">
+                                <img width="48" height="48"
+                                    src="https://img.icons8.com/external-those-icons-flat-those-icons/48/external-Linux-logos-and-brands-those-icons-flat-those-icons.png"
+                                    alt="external-Linux-logos-and-brands-those-icons-flat-those-icons" />
+                                Linux
+                            </span>
+                            <span class="badge fs-6 me-2 mb-2 skill-badge skill-english">
+                                <img width="48" height="48" src="https://img.icons8.com/color/48/great-britain.png"
+                                    alt="great-britain" />
+                                Inglés B2
+                            </span>
+                        </div>
+
+                        <h4 class="mt-4">Educación</h4>
+                        <div>
+                            <p>
+                                <strong>Tecnólogo en Análisis y Desarrollo de Software</strong>
+                                <br>
+                                Servicio Nacional de Aprendizaje (SENA)<br>
+                                Periodo: Abril 2024 - Junio 2026
+                            </p>
+                            <p>
+                                <strong>Bachiller</strong><br>
+                                Institución Educativa Nuestra Señora de Fátima
+                            </p>
+                            <hr>
+                            <p class="mt-3">Descarga mi CV para más detalles sobre mi experiencia y formación.</p>
+                        </div>
+                        <a href="assets/docs/CV_Jose_Gabriel_Oyola.pdf" class="btn btn-outline-primary"
+                            target="_blank">Descargar CV</a>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- =================================================
         SECCIÓN PROYECTOS
@@ -113,10 +206,12 @@
                     <!-- Proyecto 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="assets/images/favicon.png" class="card-img-top project-img" alt="Imagen del proyecto YTRSS">
+                            <img src="assets/images/favicon.png" class="card-img-top project-img"
+                                alt="Imagen del proyecto YTRSS">
                             <div class="card-body">
                                 <h5 class="card-title">YTRSS</h5>
-                                <p class="card-text">Un servicio RSS que genera resúmenes de tus suscripciones de YouTube y te los envía a tu lector RSS favorito.</p>
+                                <p class="card-text">Un servicio RSS que genera resúmenes de tus suscripciones de
+                                    YouTube y te los envía a tu lector RSS favorito.</p>
                             </div>
                             <div class="card-footer">
                                 <a href="proyectos/proyecto-ytrss.html" class="btn btn-secondary">Ver más</a>
@@ -126,10 +221,12 @@
                     <!-- Proyecto 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/400x250?text=SwipeGallery" class="card-img-top" alt="Imagen del proyecto SwipeGallery">
+                            <img src="https://via.placeholder.com/400x250?text=SwipeGallery" class="card-img-top"
+                                alt="Imagen del proyecto SwipeGallery">
                             <div class="card-body">
                                 <h5 class="card-title">SwipeGallery</h5>
-                                <p class="card-text">Una app de Android para organizar fotos de manera rápida e intuitiva, deslizándolas a diferentes carpetas.</p>
+                                <p class="card-text">Una app de Android para organizar fotos de manera rápida e
+                                    intuitiva, deslizándolas a diferentes carpetas.</p>
                             </div>
                             <div class="card-footer">
                                 <a href="proyectos/proyecto-swipegallery.html" class="btn btn-secondary">Ver más</a>
@@ -139,10 +236,12 @@
                     <!-- Proyecto 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="https://via.placeholder.com/400x250?text=M&K+Celuvariedades" class="card-img-top" alt="Imagen del sistema para M&K Celuvariedades">
+                            <img src="https://via.placeholder.com/400x250?text=M&K+Celuvariedades" class="card-img-top"
+                                alt="Imagen del sistema para M&K Celuvariedades">
                             <div class="card-body">
                                 <h5 class="card-title">Sistema Unificado para M&K Celuvariedades</h5>
-                                <p class="card-text">Sistema de Inventario, Punto de Venta (POS) y gestión de deudas para un negocio local.</p>
+                                <p class="card-text">Sistema de Inventario, Punto de Venta (POS) y gestión de deudas
+                                    para un negocio local.</p>
                             </div>
                             <div class="card-footer">
                                 <a href="proyectos/proyecto-myk.html" class="btn btn-secondary">Ver más</a>
@@ -170,7 +269,8 @@
                             - novalidate: Desactiva la validación por defecto del navegador para usar la de Bootstrap/JS.
                             - class="needs-validation": Clase de Bootstrap para activar los estilos de validación.
                         -->
-                        <form id="contact-form" action="https://formspree.io/f/xeoroqrr" method="POST" class="needs-validation" novalidate>
+                        <form id="contact-form" action="https://formspree.io/f/xeoroqrr" method="POST"
+                            class="needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="name" required>
@@ -194,12 +294,14 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
                         </form>
-                        <div class="text-center mt-4">
+                        <div class="text-center m-4">
                             <p>O encuéntrame en mis redes sociales:</p>
                             <!-- Reemplaza '#' con tus enlaces reales -->
-                            <a href="#" class="fs-3 me-3 text-dark"><i class="bi bi-github"></i></a>
-                            <a href="#" class="fs-3 me-3 text-dark"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="fs-3 text-dark"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://github.com/josegb123" class="fs-3 me-3 text-dark text-decoration-none"><i
+                                    class="bi bi-github"></i> Github</a>
+                            <a href="www.linkedin.com/in/gabriel-oyola-s-4577b0260"
+                                class="fs-3 me-3 text-dark text-decoration-none"><i class="bi bi-linkedin"></i>
+                                LinkedIn</a>
                         </div>
                     </div>
                 </div>
@@ -210,15 +312,18 @@
     <!-- =================================================
     FOOTER
     ================================================== -->
-    <footer class="bg-dark text-white text-center p-3">
+    <footer class="bg-dark text-white text-center p-3 mt-5">
         <div class="container">
             <p>&copy; 2024 Jose Gabriel Oyola Solano. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- Script Personalizado -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

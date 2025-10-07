@@ -1,9 +1,238 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
+/* =================================================
+ESTILOS GENERALES Y VARIABLES
+================================================== */
+
+/*
+  Se utiliza :root para definir variables de CSS.
+  Esto permite reutilizar colores fácilmente y mantener la consistencia.
+*/
+:root {
+    /* Tema Claro (por defecto) */
+    --primary-color: #0d6efd;
+    /* Color primario de Bootstrap por defecto */
+    --secondary-color: #6c757d;
+    /* Color secundario de Bootstrap */
+    --light-color: #f8f9fa;
+    /* Color claro de Bootstrap */
+    --dark-color: #212529;
+    /* Color oscuro de Bootstrap */
+    --text-color: #212529;
+    --bg-color: #ffffff;
+    --bg-light-alt: #f8f9fa;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --font-family: 'Poppins', sans-serif;
+    /* Fuente principal para el cuerpo del texto */
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+body.dark-mode {
+    --text-color: #f8f9fa;
+    --bg-color: #212529;
+    --bg-light-alt: #343a40;
+    --card-bg: #2c3034;
+}
+
+body {
+    font-family: var(--font-family);
+    /* html-scroll-behavior se usa para el desplazamiento suave nativo */
+    scroll-behavior: smooth;
+}
+
+body,
+.bg-light {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/*
+  scroll-padding-top asegura que al navegar a una sección,
+  el contenido no quede oculto debajo de la barra de navegación fija.
+  El valor debe ser igual o mayor a la altura de tu header.
+*/
+html {
+    scroll-padding-top: 30px;
+}
+
+/* =================================================
+SECCIÓN INICIO
+================================================== */
+#inicio {
+    height: 100dvh;
+    /* Ocupa toda la altura de la pantalla */
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../assets/images/background.png') no-repeat center center/cover;
+
+    color: white;
+}
+
+/* Aplicamos min-height a todas las secciones del main */
+main section {
+    /* Esto asegura que la sección ocupe al menos toda la altura 
+      de la pantalla. Si el contenido es mayor, la sección crece.
+    */
+    min-height: 100dvh;
+}
+
+/* Animación de entrada para el contenido de la sección de inicio */
+.fade-in {
+    animation: fadeInAnimation 1.5s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =================================================
+ESTILOS DE HABILIDADES (BADGES)
+================================================== */
+
+/* Estilo Base para todos los Badges de Habilidades */
+.skill-badge {
+    /* Reiniciar el estilo por defecto de Bootstrap badge */
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    /* Usar el color de texto del tema */
+    border: 2px solid;
+    /* Borde que usaremos para el color de la tecnología */
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+
+    /* Propiedades para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-flex;
+    /* Permite alinear el ícono y el texto */
+    align-items: center;
+}
+
+/* Estilo de los Íconos dentro del Badge */
+.skill-badge svg,
+.skill-badge img {
+    height: 1.5rem;
+    /* Tamaño inicial reducido del ícono */
+    width: 1.5rem;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+    /* Transición para el efecto de agrandar */
+}
+
+/* Efecto Hover para levantar el Badge y agrandar el Ícono */
+.skill-badge:hover {
+    transform: translateY(-5px);
+    /* Levantar */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.skill-badge:hover svg,
+.skill-badge:hover img {
+    transform: scale(1.3);
+    /* Agrandar el ícono un 30% */
+}
+
+/* Colores de Contorno (Según la Tecnología) */
+
+/* HTML - Naranja */
+.skill-html {
+    border-color: #E65100;
+}
+
+/* CSS/Bootstrap - Azul */
+.skill-css {
+    border-color: #0277BD;
+}
+
+/* JavaScript - Amarillo */
+.skill-js {
+    border-color: #ffd600;
+}
+
+/* Spring Boot - Verde Claro */
+.skill-spring {
+    border-color: #8bc34a;
+}
+
+/* Android/SQL (Secundario) - Gris */
+.skill-android,
+.skill-sql {
+    border-color: var(--secondary-color);
+    /* Usar el gris de Bootstrap */
+}
+
+/* Linux/Inglés (Info) - Celeste */
+.skill-linux,
+.skill-english {
+    border-color: #0dcaf0;
+    /* Usar el azul claro de Bootstrap (info) */
+}
+
+/* Estilo para que el texto sea blanco en modo oscuro */
+body.dark-mode .skill-badge {
+    color: var(--light-color) !important;
+}
+
+/* =================================================
+SECCIÓN PROYECTOS
+================================================== */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+/* Thumbnails de imagenes del proyecto*/
+.project-img {
+    height: 35dvh;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* =================================================
+ESTILOS PARA MODO OSCURO
+================================================== */
+body.dark-mode .bg-light {
+    background-color: var(--bg-light-alt) !important;
+}
+
+body.dark-mode .card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+body.dark-mode .text-dark {
+    color: var(--light-color) !important;
+}
+
+/* Estilos para formularios en modo oscuro */
+body.dark-mode .form-control {
+    background-color: var(--bg-light-alt);
+    color: var(--text-color);
+    border-color: #495057;
+    /* Un borde ligeramente más claro que el fondo */
+}
+
+body.dark-mode .form-control:focus {
+    background-color: var(--bg-light-alt);
+    color: var(--text-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    /* Mantenemos el resplandor de foco de Bootstrap */
+}
+
+body.dark-mode .form-control::placeholder {
+    color: var(--secondary-color);
+    /* Color de placeholder más sutil */
 }
