@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto: YTRSS | Jose Gabriel Oyola Solano</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos Personalizados (reutilizamos el principal) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación (ajustada para subpáginas) -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Jose Gabriel Oyola Solano</a>
+                <div class="ms-auto d-flex align-items-center">
+                    <a class="btn btn-outline-light me-3" href="../index.html#proyectos">Volver a Proyectos</a>
+                    <!-- Interruptor de Tema -->
+                    <button id="theme-toggle" class="btn btn-outline-light btn-md">
+                        <i id="theme-toggle-icon" class="bi bi-moon-stars-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- Título del Proyecto -->
+        <div class="text-center mb-5">
+            <img src="../assets/images/favicon.png" alt="icono de YTRSS" class="mb-3 rounded img-thumbnail" width="45px">
+            <h1 class="display-4">YTRSS</h1>
+            <p class="lead">Un servicio RSS para tus suscripciones de YouTube.</p>
+        </div>
+
+        <div class="row">
+            <!-- Columna de Imágenes -->
+            <div class="col-lg-7 mb-4">
+                <img src="../assets/images/proyecto1.png" class="img-fluid rounded shadow-sm border" alt="Screenshot de YTRSS">
+            </div>
+
+            <!-- Columna de Detalles -->
+            <div class="col-lg-5">
+                <h3>El Problema</h3>
+                <p>El feed de suscripciones de YouTube puede ser abrumador y está controlado por algoritmos. Quería una forma cronológica y limpia de ver los nuevos videos de mis canales favoritos, directamente en mi lector RSS.</p>
+
+                <h3 class="mt-4">La Solución</h3>
+                <p>YTRSS es un script que se conecta a la API de YouTube, obtiene los últimos videos de los canales a los que estoy suscrito y genera un archivo `feed.xml` compatible con cualquier lector RSS. Además, utiliza una IA para crear resúmenes concisos de cada video.</p>
+
+                <h4 class="mt-4">Tecnologías Utilizadas</h4>
+                <div>
+                    <span class="badge bg-primary me-2 mb-2">Python</span>
+                    <span class="badge bg-primary me-2 mb-2">YouTube Data API</span>
+                    <span class="badge bg-secondary me-2 mb-2">XML Generation</span>
+                    <span class="badge bg-success me-2 mb-2">AI for Summarization</span>
+                </div>
+
+                <div class="mt-4">
+                    <a href="#" class="btn btn-primary">Ver Código en GitHub</a>
+                    <!-- <a href="#" class="btn btn-outline-secondary">Demo en Vivo</a> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Características -->
+        <section class="mt-5 py-5 bg-light rounded">
+            <div class="container">
+                <h2 class="text-center mb-4">Características Clave</h2>
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-md-3 card m-2 p-3">
+                        <h5>Feed Cronológico</h5>
+                        <p>Adiós al algoritmo. Ve los videos en el orden en que se publicaron.</p>
+                    </div>
+                    <div class="col-md-3 card m-2 p-3">
+                        <h5>Resúmenes con IA</h5>
+                        <p>Decide si un video te interesa leyendo un resumen rápido antes de hacer clic.</p>
+                    </div>
+                    <div class="col-md-3 card m-2 p-3">
+                        <h5>Totalmente Personalizable</h5>
+                        <p>Configura fácilmente los canales que quieres seguir y la frecuencia de actualización.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Jose Gabriel Oyola Solano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script Personalizado -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

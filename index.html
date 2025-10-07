@@ -1,77 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titulo de la pagina</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Jose Gabriel Oyola Solano</title>
 
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts (Opcional, para un diseño más moderno) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons (Opcional, para iconos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 <body>
 
-  <header>
-    <div class="logo">
-      <a href="/">Mi Sitio Web</a>
-    </div>
+    <!-- =================================================
+    HEADER Y BARRA DE NAVEGACIÓN
+    ================================================== -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">Jose Gabriel Oyola Solano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acerca-de-mi">Acerca de Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <!-- Interruptor de Tema -->
+                        <li class="nav-item ms-lg-2 d-flex align-items-center">
+                            <button id="theme-toggle" class="btn btn-outline-light btn-sm">
+                                <i id="theme-toggle-icon" class="bi bi-moon-stars-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav>
-      <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/nosotros">Sobre nosotros</a></li>
-        <li><a href="/servicios">Servicios</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <!-- =================================================
+        SECCIÓN INICIO
+        ================================================== -->
+        <section id="inicio" class="d-flex align-items-center text-center">
+            <div class="container fade-in">
+                <h1 class="display-3">Jose Gabriel Oyola Solano</h1>
+                <p class="lead">Desarrollador de Software | Apasionado por la tecnología y la creación de soluciones eficientes.</p>
+                <a href="#proyectos" class="btn btn-primary btn-lg mt-3">Ver mis proyectos</a>
+            </div>
+        </section>
 
-  <main>
+        <!-- =================================================
+        SECCIÓN ACERCA DE MÍ
+        ================================================== -->
+        <section id="acerca-de-mi" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Acerca de Mí</h2>
+                <div class="row">
+                    <div class="col-lg-4 text-center">                        
+                        <img src="assets/images/foto.webp" class="img-fluid rounded mb-4" alt="Foto de Jose Gabriel Oyola Solano">
+                    </div>
+                    <div class="col-lg-8">
+                        <h3>Mi Historia</h3>
+                        <p>Soy un desarrollador con experiencia en la creación de aplicaciones web y móviles. Me enfoco en escribir código limpio, eficiente y escalable. Mi objetivo es transformar ideas en productos funcionales que aporten valor a los usuarios.</p>
+                        
+                        <h4 class="mt-4">Habilidades</h4>
+                        <!-- Ejemplo de habilidades, puedes personalizarlas -->
+                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-html me-1"></i> HTML5</span>
+                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-css me-1"></i> CSS3 & Bootstrap</span>
+                        <span class="badge fs-6 bg-primary me-2 mb-2"><i class="bi bi-filetype-js me-1"></i> JavaScript (ES6+)</span>
+                        <span class="badge fs-6 bg-success me-2 mb-2"><i class="bi bi-filetype-java me-1"></i> Spring Boot</span>
+                        <span class="badge fs-6 bg-secondary me-2 mb-2"><i class="bi bi-android2 me-1"></i> Android (Java/Kotlin)</span>
+                        <span class="badge fs-6 bg-secondary me-2 mb-2"><i class="bi bi-database me-1"></i> Bases de Datos (SQL)</span>
+                        <span class="badge fs-6 bg-info text-dark me-2 mb-2"><i class="bi bi-linux me-1"></i> Linux</span>
+                        <span class="badge fs-6 bg-info text-dark me-2 mb-2"><i class="bi bi-translate me-1"></i> Inglés B2</span>
+                        
+                        <h4 class="mt-4">Educación y Documentos</h4>
+                        <p>Aquí puedes detallar tu formación académica. Además, puedes descargar mi CV para más detalles.</p>
+                        <!-- Asegúrate de tener un archivo CV.pdf en la carpeta assets/docs/ -->
+                        <a href="assets/docs/CV.pdf" class="btn btn-outline-primary" target="_blank">Descargar CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="hero">
-      <h1>Bienvenido a Mi Sitio Web</h1>
-      <p>Descubre nuestros increíbles servicios y productos.</p>
-      <button>Más información</button>
-    </section>
+        <!-- =================================================
+        SECCIÓN PROYECTOS
+        ================================================== -->
+        <section id="proyectos" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Mis Proyectos</h2>
+                <div class="row g-4">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="assets/images/favicon.png" class="card-img-top project-img" alt="Imagen del proyecto YTRSS">
+                            <div class="card-body">
+                                <h5 class="card-title">YTRSS</h5>
+                                <p class="card-text">Un servicio RSS que genera resúmenes de tus suscripciones de YouTube y te los envía a tu lector RSS favorito.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="proyectos/proyecto-ytrss.html" class="btn btn-secondary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/400x250?text=SwipeGallery" class="card-img-top" alt="Imagen del proyecto SwipeGallery">
+                            <div class="card-body">
+                                <h5 class="card-title">SwipeGallery</h5>
+                                <p class="card-text">Una app de Android para organizar fotos de manera rápida e intuitiva, deslizándolas a diferentes carpetas.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="proyectos/proyecto-swipegallery.html" class="btn btn-secondary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="https://via.placeholder.com/400x250?text=M&K+Celuvariedades" class="card-img-top" alt="Imagen del sistema para M&K Celuvariedades">
+                            <div class="card-body">
+                                <h5 class="card-title">Sistema Unificado para M&K Celuvariedades</h5>
+                                <p class="card-text">Sistema de Inventario, Punto de Venta (POS) y gestión de deudas para un negocio local.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="proyectos/proyecto-myk.html" class="btn btn-secondary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <article>
-      <h2>Título del Artículo</h2>
-      <p>Este es el contenido de un artículo o entrada de blog. Se utiliza para bloques de texto que tienen sentido por sí solos, incluso fuera del contexto de la página principal.</p>      
-    </article>
+        <!-- =================================================
+        SECCIÓN CONTACTO
+        ================================================== -->
+        <section id="contacto" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contacto</h2>
+                <p class="text-center mb-5">¿Interesado en colaborar? ¡Envíame un mensaje!</p>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- 
+                            Formulario de contacto funcional con Formspree y validación de Bootstrap.
+                            - action: URL única de Formspree.
+                            - method="POST": Método requerido por Formspree.
+                            - id="contact-form": Para seleccionarlo con JavaScript.
+                            - novalidate: Desactiva la validación por defecto del navegador para usar la de Bootstrap/JS.
+                            - class="needs-validation": Clase de Bootstrap para activar los estilos de validación.
+                        -->
+                        <form id="contact-form" action="https://formspree.io/f/xeoroqrr" method="POST" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="name" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa tu nombre.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa un correo electrónico válido.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="message" rows="4" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escribe tu mensaje.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                        </form>
+                        <div class="text-center mt-4">
+                            <p>O encuéntrame en mis redes sociales:</p>
+                            <!-- Reemplaza '#' con tus enlaces reales -->
+                            <a href="#" class="fs-3 me-3 text-dark"><i class="bi bi-github"></i></a>
+                            <a href="#" class="fs-3 me-3 text-dark"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="fs-3 text-dark"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="caracteristicas">
-      <h2>Nuestras Características</h2>
-      <p>Explora lo que nos hace únicos.</p>
+    <!-- =================================================
+    FOOTER
+    ================================================== -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>&copy; 2024 Jose Gabriel Oyola Solano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
-      <div class="caracteristica">
-        <h3>Característica 1</h3>
-        <p>Descripción detallada de la primera característica.</p>
-      </div>
-      <div class="caracteristica">
-        <h3>Característica 2</h3>
-        <p>Descripción detallada de la segunda característica.</p>
-      </div>
-    </section>
-
-    <aside>
-      <h3>Enlaces Relacionados</h3>
-      <ul>
-        <li><a href="#">Enlace a otro artículo</a></li>
-        <li><a href="#">Publicidad o banner</a></li>
-      </ul>
-    </aside>
-
-  </main>
-
-  <footer>
-    <div class="footer-contenido">
-      <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-      <ul class="redes-sociales">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-  </footer>
-
+    <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Script Personalizado -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>
