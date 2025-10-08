@@ -27,29 +27,45 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================
     // VALIDACIÓN DEL FORMULARIO DE CONTACTO
     // =================================================
+    
     // Este código utiliza las capacidades de validación de formularios de Bootstrap 5.
-
     // 1. Seleccionamos el formulario por su ID.
     const contactForm = document.getElementById('contact-form');
 
-    // 2. Verificamos que el formulario exista en la página actual antes de añadir el listener.
     if (contactForm) {
-        // 3. Añadimos un 'escuchador de eventos' para el evento 'submit'.
+        // Expresión Regular para un Correo Válido:
+        // Fuerza el formato [texto]@[texto].[dos o más caracteres]
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const emailInput = document.getElementById('email'); // ID del campo es 'email'
+
         contactForm.addEventListener('submit', function(event) {
-            // 4. `checkValidity()` es un método nativo de los formularios HTML5.
-            //    Devuelve `false` si algún campo con `required`, `type="email"`, etc., no cumple las reglas.
-            if (!contactForm.checkValidity()) {
-                // Si el formulario no es válido:
-                // a. Prevenimos el envío del formulario.
+            
+            let isEmailValid = true; // Variable para controlar la validez del email
+
+            // 1. Validar el Email con Regex (si el campo existe)
+            if (emailInput) {
+                if (!emailRegex.test(emailInput.value)) {
+                    // Si el correo NO cumple el regex:
+                    isEmailValid = false;
+                    // Marca el campo como inválido (útil para estilos personalizados si checkValidity no lo hace)
+                    emailInput.setCustomValidity("El formato del correo debe incluir un dominio válido (ej. nombre@dominio.com)");
+                } else {
+                    // Si el correo CUMPLE el regex, restablece la validez para que Bootstrap pueda marcarlo como OK
+                    emailInput.setCustomValidity("");
+                }
+            }
+            
+            // 2. Ejecutar la validación general de HTML5
+            // La validación general fallará si algún campo 'required' falla O si el email falló la regex.
+            if (!contactForm.checkValidity() || !isEmailValid) {
+                // Si el formulario NO es válido (por HTML5 o por la nueva regex):
                 event.preventDefault();
-                // b. Detenemos la propagación del evento para no interferir con otros posibles scripts.
                 event.stopPropagation();
             }
 
-            // 5. Añadimos la clase 'was-validated' al formulario.
-            //    Bootstrap usa esta clase para mostrar los estilos de validación (bordes verdes/rojos y mensajes de error).
-            //    Esto se hace tanto si el formulario es válido como si no, para dar feedback visual inmediato al usuario.
+            // 3. Añadir la clase 'was-validated' para mostrar estilos de Bootstrap
             contactForm.classList.add('was-validated');
+
         }, false);
     }
 
@@ -58,20 +74,19 @@ document.addEventListener('DOMContentLoaded', function() {
     // =================================================
 
     // 1. Seleccionamos los elementos necesarios del DOM.
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeToggleIcon = document.getElementById('theme-toggle-icon');
+    const themeToggle = document.getElementById('theme-toggle');    
     const body = document.body;
 
     // 2. Función para aplicar el tema (claro u oscuro).
     const applyTheme = (theme) => {
         if (theme === 'dark') {
             body.classList.add('dark-mode');
-            themeToggleIcon.classList.remove('bi-moon-stars-fill');
-            themeToggleIcon.classList.add('bi-sun-fill');
+            themeToggle.classList.remove('btn-outline-light');
+            themeToggle.classList.add('btn-light');
         } else {
             body.classList.remove('dark-mode');
-            themeToggleIcon.classList.remove('bi-sun-fill');
-            themeToggleIcon.classList.add('bi-moon-stars-fill');
+            themeToggle.classList.remove('btn-light');
+            themeToggle.classList.add('btn-outline-light');
         }
     };
 

@@ -4,32 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto: YTRSS | Jose Gabriel Oyola Solano</title>
+    <title>Proyecto: YTRSS | Gabriel Oyola Solano</title>
 
-    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos Personalizados (reutilizamos el principal) -->
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
 
-    <!-- Barra de Navegación (ajustada para subpáginas) -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Jose Gabriel Oyola Solano</a>
+                <a class="navbar-brand" href="../index.html">Gabriel Oyola Solano</a>
                 <div class="ms-auto d-flex align-items-center">
                     <a class="btn btn-outline-light me-3" href="../index.html#proyectos">Volver a Proyectos</a>
-                    <!-- Interruptor de Tema -->
                     <button id="theme-toggle" class="btn btn-outline-light btn-md">
-                        <i id="theme-toggle-icon" class="bi bi-moon-stars-fill"></i>
+                        <svg id="theme-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a7.9 7.9 0 0 1 -8.313 -12.454z">
+                            </path>
+                            <path d="M17 4a2 2 0 0 0 2 2m-2-2"></path>
+                            <path d="M19 11h2"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -37,22 +40,19 @@
     </header>
 
     <main class="container my-5">
-        <!-- Título del Proyecto -->
         <div class="text-center mb-5">
-            <img src="../assets/images/favicon.png" alt="icono de YTRSS" class="mb-3 rounded img-thumbnail"
-                width="45px">
+            <img src="../assets/images/proyecto-ytrss-thumbnail.webp" alt="icono de YTRSS"
+                class="mb-3 rounded img-thumbnail" width="45px">
             <h1 class="display-4">YTRSS</h1>
             <p class="lead">Un servicio RSS para tus suscripciones de YouTube.</p>
         </div>
 
         <div class="row">
-            <!-- Columna de Imágenes -->
             <div class="col-lg-7 mb-4">
-                <img src="../assets/images/proyecto1.png" class="img-fluid rounded shadow-sm border"
+                <img src="../assets/images/proyecto-ytrss.webp" class="img-fluid rounded shadow-sm border img-project"
                     alt="Screenshot de YTRSS">
             </div>
 
-            <!-- Columna de Detalles -->
             <div class="col-lg-5">
                 <h3>El Problema</h3>
                 <p>El feed de suscripciones de YouTube puede ser abrumador y está controlado por algoritmos. Quería una
@@ -65,36 +65,124 @@
                     utiliza una IA para crear resúmenes concisos de cada video.</p>
 
                 <h4 class="mt-4">Tecnologías Utilizadas</h4>
-                <div>
-                    <span class="badge bg-primary me-2 mb-2">Python</span>
-                    <span class="badge bg-primary me-2 mb-2">YouTube Data API</span>
-                    <span class="badge bg-secondary me-2 mb-2">XML Generation</span>
-                    <span class="badge bg-success me-2 mb-2">AI for Summarization</span>
+                <div class="d-flex flex-wrap">
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #3776AB; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-python">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 9h-7a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h3" />
+                            <path d="M12 15h7a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-3" />
+                            <path
+                                d="M8 9v-4a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v5a2 2 0 0 1 -2 2h-4a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4a2 2 0 0 0 2 -2v-4" />
+                            <path d="M11 6l0 .01" />
+                            <path d="M13 18l0 .01" />
+                        </svg>
+                        Python
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #FF0000; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-youtube">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" />
+                        </svg>
+                        YouTube Data API
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #6C757D; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code me-1"
+                            width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 8l-4 4l4 4"></path>
+                            <path d="M17 8l4 4l-4 4"></path>
+                            <path d="M14 4l-4 16"></path>
+                        </svg>
+                        XML Generation
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #198754; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github-copilot">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 18v-5.5c0 -.667 .167 -1.333 .5 -2" />
+                            <path
+                                d="M12 7.5c0 -1 -.01 -4.07 -4 -3.5c-3.5 .5 -4 2.5 -4 3.5c0 1.5 0 4 3 4c4 0 5 -2.5 5 -4z" />
+                            <path
+                                d="M4 12c-1.333 .667 -2 1.333 -2 2c0 1 0 3 1.5 4c3 2 6.5 3 8.5 3s5.499 -1 8.5 -3c1.5 -1 1.5 -3 1.5 -4c0 -.667 -.667 -1.333 -2 -2" />
+                            <path d="M20 18v-5.5c0 -.667 -.167 -1.333 -.5 -2" />
+                            <path
+                                d="M12 7.5l0 -.297l.01 -.269l.027 -.298l.013 -.105l.033 -.215c.014 -.073 .029 -.146 .046 -.22l.06 -.223c.336 -1.118 1.262 -2.237 3.808 -1.873c2.838 .405 3.703 1.797 3.93 2.842l.036 .204c0 .033 .01 .066 .013 .098l.016 .185l0 .171l0 .49l-.015 .394l-.02 .271c-.122 1.366 -.655 2.845 -2.962 2.845c-3.256 0 -4.524 -1.656 -4.883 -3.081l-.053 -.242a3.865 3.865 0 0 1 -.036 -.235l-.021 -.227a3.518 3.518 0 0 1 -.007 -.215z" />
+                            <path d="M10 15v2" />
+                            <path d="M14 15v2" />
+                        </svg>
+                        n8n Automation
+                    </span>
                 </div>
 
                 <div class="mt-4">
                     <a href="#" class="btn btn-primary">Ver Código en GitHub</a>
-                    <!-- <a href="#" class="btn btn-outline-secondary">Demo en Vivo</a> -->
                 </div>
             </div>
         </div>
 
-        <!-- Sección de Características -->
         <section class="mt-5 py-5 bg-light rounded">
             <div class="container">
                 <h2 class="text-center mb-4">Características Clave</h2>
                 <div class="row text-center d-flex justify-content-center">
-                    <div class="col-md-3 card m-2 p-3">
+
+                    <div class="col-md-3 card m-2 p-4 feature-card">
+                        <div class="icon-wrapper mb-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock"
+                                width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#0D6EFD" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                <path d="M12 7v5l3 3"></path>
+                            </svg>
+                        </div>
                         <h5>Feed Cronológico</h5>
-                        <p>Adiós al algoritmo. Ve los videos en el orden en que se publicaron.</p>
+                        <p class="text-muted">Adiós al algoritmo. Ve los videos en el orden en que se publicaron.</p>
                     </div>
-                    <div class="col-md-3 card m-2 p-3">
+
+                    <div class="col-md-3 card m-2 p-4 feature-card">
+                        <div class="icon-wrapper mb-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brain"
+                                width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#198754" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M15.5 13a3.5 3.5 0 0 0 -3.5 -3.5h-1a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-1a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h1.5a3.5 3.5 0 0 0 3.5 -3.5v-4z">
+                                </path>
+                                <path
+                                    d="M8.5 13a3.5 3.5 0 0 1 3.5 -3.5h1a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h1a1 1 0 0 0 1 1v2a1 1 0 0 0 -1 1h-1.5a3.5 3.5 0 0 1 -3.5 -3.5v-4z">
+                                </path>
+                            </svg>
+                        </div>
                         <h5>Resúmenes con IA</h5>
-                        <p>Decide si un video te interesa leyendo un resumen rápido antes de hacer clic.</p>
+                        <p class="text-muted">Decide si un video te interesa leyendo un resumen rápido antes de hacer
+                            clic.</p>
                     </div>
-                    <div class="col-md-3 card m-2 p-3">
+
+                    <div class="col-md-3 card m-2 p-4 feature-card">
+                        <div class="icon-wrapper mb-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings"
+                                width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="#6C757D" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 1.488 1.012 2.572 -1.065z">
+                                </path>
+                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                            </svg>
+                        </div>
                         <h5>Totalmente Personalizable</h5>
-                        <p>Configura fácilmente los canales que quieres seguir y la frecuencia de actualización.</p>
+                        <p class="text-muted">Configura fácilmente los canales que quieres seguir y la frecuencia de
+                            actualización.</p>
                     </div>
                 </div>
             </div>
@@ -102,16 +190,13 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-5">
         <div class="container">
-            <p>&copy; 2024 Jose Gabriel Oyola Solano. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Gabriel Oyola Solano. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script Personalizado -->
     <script src="../js/script.js"></script>
 </body>
 

@@ -60,7 +60,7 @@ mi-portafolio/
   * Todos los archivos HTML, CSS y JavaScript deben estar **limpios, bien comentados y seguir buenas prácticas de codificación**.
   * El **diseño** debe ser moderno y profesional, enfocándose en la **legibilidad** y la **usabilidad**.
   * Para los enlaces de Bootstrap, se debe utilizar la **versión 5 CDN** para no tener que descargar los archivos localmente.
-  * Mi nombre es Jose Gabriel Oyola Solano
+  * Mi nombre es Gabriel Oyola Solano
   * la pagina debe llevar 3 proyectos: YTRSS(Un servicio RSS que genera resumenes de tus suscripciones de youtube y te los envia a tu lector RSS favorito), SwipeGallery(Una app de android para organizar fotos deslizandolas), "Sistema Unificado de Inventario,POS y Deudas para M&K Celuvariedades"    
   * Dentro de la carpeta docs se debe documentar todo el proyecto, ya que es un proyecto principiante debe documentarse cada linea de codigo fuera de lo usual en lo basico.
 

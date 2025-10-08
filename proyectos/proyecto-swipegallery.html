@@ -4,32 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto: SwipeGallery | Jose Gabriel Oyola Solano</title>
+    <title>Proyecto: SwipeGallery | Gabriel Oyola Solano</title>
 
-    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <!-- Barra de Navegación -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="../index.html">Jose Gabriel Oyola Solano</a>
+                <a class="navbar-brand" href="../index.html">Gabriel Oyola Solano</a>
                 <div class="ms-auto d-flex align-items-center">
                     <a class="btn btn-outline-light me-3" href="../index.html#proyectos">Volver a Proyectos</a>
-                    <!-- Interruptor de Tema -->
                     <button id="theme-toggle" class="btn btn-outline-light btn-md">
-                        <i id="theme-toggle-icon" class="bi bi-moon-stars-fill"></i>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9.173 14.83a4 4 0 1 1 5.657 -5.657" /><path d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914" /><path d="M3 12h1" /><path d="M12 3v1" /><path d="M5.6 5.6l.7 .7" /><path d="M3 21l18 -18" /></svg>
                     </button>
                 </div>
             </div>
@@ -37,20 +30,19 @@
     </header>
 
     <main class="container my-5">
-        <!-- Título del Proyecto -->
         <div class="text-center mb-5">
+            <img src="../assets/images/proyecto-swipe-thumbnail.webp" alt="Icono de SwipeGallery"
+                class="mb-3 rounded img-thumbnail" width="45px">
             <h1 class="display-4">SwipeGallery</h1>
             <p class="lead">Organiza tus fotos con la simplicidad de un gesto.</p>
         </div>
 
         <div class="row">
-            <!-- Columna de Imágenes -->
             <div class="col-lg-7 mb-4">
-                <img src="https://via.placeholder.com/800x500?text=Mockup+de+SwipeGallery"
-                    class="img-fluid rounded shadow-sm" alt="Mockup de la app SwipeGallery">
+                <img src="../assets/images/proyecto-swipe.webp"
+                    class="img-fluid rounded shadow-sm border img-project" alt="Mockup de la app SwipeGallery">
             </div>
 
-            <!-- Columna de Detalles -->
             <div class="col-lg-5">
                 <h3>El Problema</h3>
                 <p>Después de un viaje o un evento, mi galería se llena de cientos de fotos. Moverlas, borrarlas y
@@ -63,53 +55,124 @@
                     convierte una tarea aburrida en una acción rápida y casi lúdica.</p>
 
                 <h4 class="mt-4">Tecnologías Utilizadas</h4>
-                <div>
-                    <span class="badge bg-success me-2 mb-2">Android (Kotlin)</span>
-                    <span class="badge bg-success me-2 mb-2">Jetpack Compose</span>
-                    <span class="badge bg-secondary me-2 mb-2">Material Design 3</span>
-                    <span class="badge bg-primary me-2 mb-2">Coroutines</span>
+                <div class="d-flex flex-wrap">
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #7F52FF; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-kotlin me-1">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M20 20h-16v-16h16"></path>
+                            <path d="M4 20l16 -16"></path>
+                            <path d="M4 12l12 12"></path>
+                            <path d="M12 4l-8 8"></path>
+                        </svg>
+                        Kotlin
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #3DDC84; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android me-1">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M9 19c0 1.104.896 2 2 2h2c1.104 0 2-.896 2-2M7 11v6.5a.5.5 0 0 0 1 0V11m8 0v6.5a.5.5 0 0 0 1 0V11M5 7h14v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7z">
+                            </path>
+                            <path d="M10 5h4"></path>
+                            <path d="M8 8l1 1"></path>
+                            <path d="M15 8l1 1"></path>
+                        </svg>
+                        Android
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #4285F4; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-components me-1">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 12l3 3l3 -3l-3 -3z"></path>
+                            <path d="M12 3l3 3l-3 3l-3 -3z"></path>
+                            <path d="M7.5 10.5l7.5 7.5"></path>
+                            <path d="M16.5 16.5l3 3l-3 3l-3 -3z"></path>
+                            <path d="M17.5 6.5l2.5 2.5"></path>
+                        </svg>
+                        Jetpack Compose
+                    </span>
+                    <span class="badge skill-badge me-2 mb-2 p-2 d-flex align-items-center"
+                        style="background-color: #1976D2; color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-rotate-clockwise-2 me-1" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M20 4v5h-5"></path>
+                            <path d="M4 13a8 8 0 1 1 5 -6.3"></path>
+                        </svg>
+                        Coroutines
+                    </span>
                 </div>
 
                 <div class="mt-4">
                     <a href="#" class="btn btn-primary">Ver Código en GitHub</a>
-                    <!-- <a href="#" class="btn btn-outline-secondary">Descargar en Play Store</a> -->
                 </div>
             </div>
         </div>
 
-        <!-- Sección de Características -->
-        <section class="mt-5 py-5 bg-light rounded">
-            <div class="container">
-                <h2 class="text-center mb-4">Características Clave</h2>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <h5>Interfaz Intuitiva</h5>
-                        <p>La mecánica de "swipe" es universalmente conocida y fácil de usar.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Organización Rápida</h5>
-                        <p>Clasifica cientos de fotos en minutos, no en horas.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Carpetas Personalizadas</h5>
-                        <p>Define tus propias carpetas de destino para una organización a tu medida.</p>
-                    </div>
+        <div class="mt-5 p-4 bg-light rounded d-flex flex-column justify-content-center align-items-center ">
+            <h2 class="text-center mb-5">Características Clave</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-hand-click mb-3">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                        <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                        <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                        <path
+                            d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                        <path d="M5 3l-1 -1" />
+                        <path d="M4 7h-1" />
+                        <path d="M14 3l1 -1" />
+                        <path d="M15 6h1" />
+                    </svg>
+                    <h5>Interfaz Intuitiva</h5>
+                    <p>La mecánica de "swipe" es universalmente conocida y fácil de usar.</p>
+                </div>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-speedtest mb-3">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5.636 19.364a9 9 0 1 1 12.728 0" />
+                        <path d="M16 9l-4 4" />
+                    </svg>
+                    <h5>Organización Rápida</h5>
+                    <p>Clasifica cientos de fotos en minutos, no en horas.</p>
+                </div>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150px" height="150px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-folde mb-3">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <h5>Carpetas Personalizadas</h5>
+                    <p>Define tus propias carpetas de destino para una organización a tu medida.</p>
                 </div>
             </div>
-        </section>
+        </div>
+
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-5">
         <div class="container">
-            <p>&copy; 2024 Jose Gabriel Oyola Solano. Todos los derechos reservados.</p>
+            <p>&copy; 2024 Gabriel Oyola Solano. Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Script Personalizado -->
     <script src="../js/script.js"></script>
 </body>
 
