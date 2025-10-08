@@ -59,7 +59,7 @@ SECCIÓN INICIO
 #inicio {
     height: 100dvh;
     /* Ocupa toda la altura de la pantalla */
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../assets/images/background.webp') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url('../assets/images/background.webp') no-repeat center center/cover;
 
     color: white;
 }
@@ -201,8 +201,8 @@ SECCIÓN PROYECTOS
 }
 
 /*Imagenes de proyecto en detalle*/
-.img-project {    
-    transition: transform 0.3s ease, box-shadow 0.3s ease;    
+.img-project {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-project:hover {
@@ -213,7 +213,7 @@ SECCIÓN PROYECTOS
 
 .card-img-top {
     /* Define una altura fija para todas las imágenes de miniatura */
-    height: 300px; 
+    height: 300px;
     /* Ajusta el contenido de la imagen para que cubra toda el área */
     /* El exceso se recortará, garantizando que no se estire ni distorsione la imagen */
     object-fit: cover;
